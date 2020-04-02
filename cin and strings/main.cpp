@@ -9,7 +9,12 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::string mystr;
+    std::cout << "What is your name? ";
+    getline (std::cin, mystr);
+    std::cout << "Hello " << mystr << ".\n";
+    std::cout << "What is your favourite activity? ";
+    getline (std::cin, mystr);
+    std::cout << "Hey, I like " << mystr << " too!\n";
     return 0;
 }
